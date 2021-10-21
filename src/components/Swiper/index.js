@@ -32,7 +32,7 @@ export default memo(function MySwiper({ list, title }) {
       speed: 1000,
       centeredSlides: true,
       autoplay: {
-        delay: 1500,
+        delay: 1000,
         disableOnInteraction: false
       },
       pagination: {
@@ -59,7 +59,7 @@ export default memo(function MySwiper({ list, title }) {
           {list.map((item = {}, index) => {
             return (
               <div key={index} className={'swiper-slide'}>
-                {item}
+                <span>{item}</span>
               </div>
             )
           })}

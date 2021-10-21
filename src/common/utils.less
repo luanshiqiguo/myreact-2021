@@ -2,7 +2,7 @@ body {
   background: rgba(244, 235, 104, 1);
 }
 
-.font(@size, @height, @color: @main-color, @weight: normal, @align: center) {
+.font(@size, @height, @color, @weight: normal, @align: center) {
   font-size: @size;
   line-height: @height;
   color: @color;
@@ -14,7 +14,7 @@ body {
   font-family: Bebas;
   font-style: normal;
   font-weight: normal;
-  src: url('~/src/common/font/Bebas-Regular.otf');
+  src: url('~/src/common/font/Bebas-Regular.otf'); // 使用绝对路径，相对路径可能会找不到资源
 }
 
 @font-face {
