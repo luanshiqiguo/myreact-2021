@@ -1,4 +1,5 @@
 import React from 'react'
+import Swiper from '../../components/Swiper'
 import Sorry from './img/sorry.jpeg'
 import './index.less'
 
@@ -8,7 +9,7 @@ function NotOpen() {
   return (
     <div className={classPrefix}>
       <div className={`${classPrefix}-content`}>
-        <h1>努力搬砖中~</h1>
+        <Swiper title='敬请期待' list={['努', '力', '搬', '砖', '中']} />
         <img src={Sorry} className={`${classPrefix}-content-pic`} alt='' />
       </div>
     </div>
