@@ -1,0 +1,14 @@
+// 闪烁动画 用于明亮效果的闪烁
+
+@keyframes flashBrightness {
+  from,
+  50%,
+  to {
+    filter: brightness(180%);
+  }
+
+  25%,
+  75% {
+    filter: none;
+  }
+}
