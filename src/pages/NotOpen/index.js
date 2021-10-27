@@ -9,7 +9,7 @@ function NotOpen() {
   return (
     <div className={classPrefix}>
       <div className={`${classPrefix}-title`}>
-        欢迎来到<strong></strong>的六维宇宙
+        欢迎探秘<strong></strong>六维宇宙
       </div>
       <div className={`${classPrefix}-content`}>
         <h1>网站维护中，敬请期待~</h1>
