@@ -1,0 +1,19 @@
+@import './animation/bounceIn.less';
+.am-toast-notice-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  width: 80%;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 50px;
+  font-weight: 450;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.am-toast-notice-content .am-toast-text {
+  animation: bounceIn .3s linear 1;
+}

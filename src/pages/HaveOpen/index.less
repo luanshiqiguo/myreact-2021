@@ -1,8 +1,18 @@
-@import '../../common//utils.less';
+@import '../../common/utils.less';
 @class-prefix: ~'have-open';
 
 .@{class-prefix} {
   vertical-align: middle;
+
+  &-go-home {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 97px;
+    height: 67px;
+    opacity: .5;
+    .background('go-home.png');
+  }
 
   &-content {
     margin-top: 50px;

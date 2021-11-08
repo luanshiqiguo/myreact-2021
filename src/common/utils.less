@@ -1,5 +1,12 @@
+@import './antd-mobile.less';
 body {
   background: rgba(244, 235, 104, 1);
+}
+
+.background(@img, @height: 100%, @color: transparent, @repeat: no-repeat) {
+  background: url('~/src/resources/img/@{img}') @repeat;
+  background-size: 100% @height;
+  background-color: @color;
 }
 
 .font(@size, @height, @color, @weight: normal, @align: center) {
