@@ -1,0 +1,9 @@
+// 根目录设置
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": [
+    "src"
+  ]
+}

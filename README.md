@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# 项目设置绝对路径
+1 根目录创建jsconfig.json文件，添加以下内容：
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": [
+    "src"
+  ]
+}
+
+2 在config路径下找到webpack.config.js文件，找到alias模块，并添加以下内容
+'@': path.resolve('src'),
+

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Toast } from 'antd-mobile'
-import SorryImg from '../../resources/img/sorry.png'
-import { SWIPER_TEXT_LIST } from '../../common/constant'
+import { SWIPER_TEXT_LIST, SORRY_IMG } from '../../common/constant'
 import Swiper from '../../components/Swiper'
 import LinkTo from '../../components/LinkTo'
 import Apis from '../apis'
@@ -29,7 +28,7 @@ function NotOpen() {
           classname={styles['go-home']}
         />
         <Swiper title='敬请期待' list={SWIPER_TEXT_LIST} />
-        <img src={SorryImg} alt='' />
+        <img src={SORRY_IMG} alt='' />
       </div>
       <div className={styles.bottom} onClick={getRequest}>
         接口测试

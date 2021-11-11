@@ -6,8 +6,6 @@ import Swiper from 'swiper';
 import 'swiper/css/swiper.css';
 import styles from './index.module.scss'
 
-const classPrefix = 'components-swiper'
-
 export default memo(function MySwiper({ list, title }) {
   const swiperRef = useRef()
   const mySwiper = useRef()

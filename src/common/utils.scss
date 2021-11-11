@@ -4,7 +4,7 @@ body {
 }
 
 @mixin background($img, $height: 100%, $color: transparent, $repeat: no-repeat) {
-  background: url('../resources/img/#{$img}') $repeat;
+  background: url('~resources/img/#{$img}') $repeat;
   background-size: 100% $height;
   background-color: $color;
 }
@@ -21,17 +21,17 @@ body {
   font-family: Bebas;
   font-style: normal;
   font-weight: normal;
-  src: url('../resources/font/Bebas-Regular.otf'); // 使用绝对路径，相对路径可能会找不到资源
+  src: url('~resources/font/Bebas-Regular.otf'); // 使用绝对路径，相对路径可能会找不到资源
 }
 
 @font-face {
   font-family: YouSheBiaoTiHei;
   font-style: normal;
   font-weight: normal;
-  src: url('../resources/font/YouSheBiaoTiHei.ttf');
+  src: url('~resources/font/YouSheBiaoTiHei.ttf');
 }
 
 @font-face {
   font-family: FZFEIFT_CUJW;
-  src: url('../resources/font/FZFEIFT-CUJW.TTF');
+  src: url('~resources/font/FZFEIFT-CUJW.TTF');
 }

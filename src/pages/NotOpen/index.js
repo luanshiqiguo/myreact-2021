@@ -1,11 +1,9 @@
 import React from 'react'
-import SorryImg from '../../resources/img/sorry.png'
+import { SORRY_IMG } from '../../common/constant'
 import LinkTo from '../../components/LinkTo'
 import CountDown from '../../components/CountDown'
 
 import styles from './index.module.scss'
-
-const classPrefix = 'not-open'
 
 function NotOpen() {
   return (
@@ -15,7 +13,7 @@ function NotOpen() {
       </div>
       <div className={styles.content}>
         <h1>网站维护中，敬请期待~</h1>
-        <img src={SorryImg} alt='' />
+        <img src={SORRY_IMG} alt='' />
         <div className={styles['count-down']}>
           <CountDown initTime={3600} />
         </div>
