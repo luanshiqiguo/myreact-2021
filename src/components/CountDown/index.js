@@ -1,9 +1,10 @@
+/**
+ * 倒计时
+ */
 import React, { memo } from 'react';
 import useCountDown from '../../common/hooks/useCountDown'
 
-import './index.less'
-
-const classPrefix = 'components-countdown'
+import styles from './index.module.scss'
 
 function CountDown ({ initTime, isRefresh = true }) {
   const onEnd = () => { // 倒计时结束刷新页面
@@ -14,8 +15,8 @@ function CountDown ({ initTime, isRefresh = true }) {
 
   const { hour, minute, second } = useCountDown(initTime, onEnd)
   if (!(+initTime > 0)) return null
-  return <div className={classPrefix}>
-    <div className={`${classPrefix}-time`}>{hour}:{minute}:{second}</div>
+  return <div className={styles['components-countdown']}>
+    <div className={styles.time}>{hour}:{minute}:{second}</div>
   </div>
 }
 

@@ -1,8 +1,8 @@
-@import '../../common/utils.less';
-@class-prefix: ~'not-open';
+@import '../../common/utils.scss';
 
-.@{class-prefix} {
-  &-title {
+.not-open {
+
+  .title {
     width: 100%;
     height: 75px;
     line-height: 75px;
@@ -14,7 +14,7 @@
     border-bottom: 2px solid #000;
   }
 
-  &-content {
+  .content {
     position: absolute;
     top: 75px;
     bottom: 0;
@@ -35,14 +35,21 @@
       border: 0;
       overflow: hidden;
     }
+
+    .count-down {
+      margin: 20px auto;
+      font-family: Bebas;
+      @include font(48px, 2, rgb(0, 0, 0));
+    }
   }
 
-  &-bottom {
+  .bottom {
     position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
     bottom: 0;
+    left: 0;
     height: 100px;
     width: 100%;
     font-size: 24px;
@@ -50,7 +57,7 @@
     background: #fff;
     z-index: 99;
 
-    &-code {
+    .code {
       color: #bbb;
       text-decoration: none;
     }

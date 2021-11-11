@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals'
 import App from './App'
 import 'lib-flexible'
 
-import './index.less'
+import './index.scss'
 
 ReactDOM.render(
   <Router>

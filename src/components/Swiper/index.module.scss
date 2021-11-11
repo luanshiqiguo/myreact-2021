@@ -1,0 +1,13 @@
+@import '../../common/utils.scss';
+
+.components-swiper {
+  margin: auto;
+  width: 60%;
+  font-family: YouSheBiaoTiHei;
+  @include font(100px, 1.5, rgb(0, 0, 0));
+
+  .title {
+    font-size: 60px;
+    font-family: FZFEIFT_CUJW;
+  }
+}

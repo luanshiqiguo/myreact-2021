@@ -1,20 +1,19 @@
-@import '../../common/utils.less';
-@class-prefix: ~'have-open';
+@import '../../common/utils.scss';
 
-.@{class-prefix} {
+.have-open {
   vertical-align: middle;
 
-  &-go-home {
+  .go-home {
     position: absolute;
     top: 100px;
     right: 0;
     width: 97px;
     height: 67px;
     opacity: .5;
-    .background('go-home.png');
+    @include background('go-home.png');
   }
 
-  &-content {
+  .content {
     margin-top: 50px;
     text-align: center;
 
@@ -24,7 +23,8 @@
     }
   }
 
-  &-bottom {
-    .font(36px, 1.5, rgb());
+  .bottom {
+    margin: 20px auto;
+    @include font(36px, 1.5, #495060);
   }
 }

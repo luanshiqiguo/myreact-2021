@@ -1,10 +1,10 @@
 /**
- * @component 轮播
+ * 轮播
  */
 import React, { useEffect, memo, useRef, useCallback } from 'react'
 import Swiper from 'swiper';
 import 'swiper/css/swiper.css';
-import './index.less'
+import styles from './index.module.scss'
 
 const classPrefix = 'components-swiper'
 
@@ -52,9 +52,9 @@ export default memo(function MySwiper({ list, title }) {
   }
 
   return (
-    <div className={classPrefix}>
+    <div className={styles['components-swiper']}>
       <div ref={swiperRef} className={'swiper-container'}>
-        {title && <div className={`${classPrefix}-title`}>{title}</div>}
+        {title && <div className={styles.title}>{title}</div>}
         <div className="swiper-wrapper">
           {list.map((item = {}, index) => {
             return (

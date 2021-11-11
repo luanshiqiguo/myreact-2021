@@ -6,9 +6,8 @@ import Swiper from '../../components/Swiper'
 import LinkTo from '../../components/LinkTo'
 import Apis from '../apis'
 
-import './index.less'
-
-const classPrefix = 'have-open'
+import styles from './index.module.scss'
+import '../../common/antd-mobile.scss'
 
 function NotOpen() {
   const getRequest = async () => {
@@ -23,16 +22,16 @@ function NotOpen() {
   }
 
   return (
-    <div className={classPrefix}>
-      <div className={`${classPrefix}-content`}>
+    <div className={styles['have-open']}>
+      <div className={styles.content}>
         <LinkTo
           to='/home'
-          classname={`${classPrefix}-go-home`}
+          classname={styles['go-home']}
         />
         <Swiper title='敬请期待' list={SWIPER_TEXT_LIST} />
-        <img src={SorryImg} className={`${classPrefix}-content-pic`} alt='' />
+        <img src={SorryImg} alt='' />
       </div>
-      <div className={`${classPrefix}-bottom`} onClick={getRequest}>
+      <div className={styles.bottom} onClick={getRequest}>
         接口测试
       </div>
     </div>
