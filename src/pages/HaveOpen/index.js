@@ -16,7 +16,7 @@ function NotOpen() {
       return false
     })
     if (!data) return
-    Toast.info(`success: ${data?.[0]?.depName}`)
+    Toast.info(`success: ${Object.values(data?.[1])}`)
     console.log('请求成功data:', data)
   }
 

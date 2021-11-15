@@ -5,7 +5,7 @@ import axios from 'axios'
 
 const Apis = {
   testDepart(data) {
-    return axios.get('http://81.68.97.196:8081/depart/selectAll', data)
+    return axios.get('http://81.68.97.196:8081/depart/showSql', data)
   }
 }
 

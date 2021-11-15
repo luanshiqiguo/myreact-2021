@@ -1,9 +1,11 @@
-// 根目录设置
 {
   "compilerOptions": {
-    "baseUrl": "src"
+     "target": "es2017",
+     "allowSyntheticDefaultImports": false,
+      "baseUrl": "src",
+      "paths": {
+          "@/*": ["src/*"]
+     }
   },
-  "include": [
-    "src"
-  ]
+  "exclude": ["node_modules", "dist"]
 }
