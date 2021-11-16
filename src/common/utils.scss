@@ -1,6 +1,8 @@
 
 body {
-  background: rgba(244, 235, 104, 1);
+  background: transparent;
+  margin: 0;
+  padding: 0;
 }
 
 @mixin background($img, $height: 100%, $color: transparent, $repeat: no-repeat) {
@@ -9,12 +11,19 @@ body {
   background-color: $color;
 }
 
-@mixin font($size, $height, $color: rgb(255, 255, 255), $weight: normal, $align: center) {
+@mixin font($size, $height, $color: rgb(0, 0, 0), $weight: normal, $align: center) {
   font-size: $size;
   line-height: $height;
   color: $color;
   font-weight: $weight;
   text-align: $align;
+}
+
+@mixin display-flex($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
 }
 
 @font-face {

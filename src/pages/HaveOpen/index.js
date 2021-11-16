@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Toast } from 'antd-mobile'
-import { SWIPER_TEXT_LIST, SORRY_IMG } from '../../common/constant'
+import { SWIPER_TEXT_LIST, SORRY_IMG, MIN_HEIGHT } from '../../common/constant'
 import Swiper from '../../components/Swiper'
 import LinkTo from '../../components/LinkTo'
 import Apis from '../apis'
@@ -21,12 +21,12 @@ function NotOpen() {
   }
 
   return (
-    <div className={styles['have-open']}>
+    <div className={styles['have-open']} style={{ minHeight: MIN_HEIGHT + 'px' }}>
       <div className={styles.content}>
         <LinkTo
-          to='/home'
+          to='/'
           classname={styles['go-home']}
-        />
+        >返回首页</LinkTo>
         <Swiper title='敬请期待' list={SWIPER_TEXT_LIST} />
         <img src={SORRY_IMG} alt='' />
       </div>
@@ -37,4 +37,4 @@ function NotOpen() {
   )
 }
 
-export default NotOpen
+export default memo(NotOpen)

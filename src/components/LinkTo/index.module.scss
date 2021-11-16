@@ -1,5 +1,9 @@
 @import '../../common/utils.scss';
 
 .components-linkto {
-  
+  @include display-flex;
+
+  a {
+    text-decoration: none;
+  }
 }

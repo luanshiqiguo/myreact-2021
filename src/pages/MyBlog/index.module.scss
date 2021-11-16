@@ -1,0 +1,42 @@
+@import '../../common/utils.scss';
+
+body {
+  background: none;
+}
+
+.my-blog {
+
+  .bar {
+    @include display-flex;
+    @include font(28px, 1, rgb(0, 0, 0));
+  }
+
+  .list {
+    @include display-flex(column);
+
+    .item {
+      margin: 15px auto 15px 40px;
+      cursor: pointer;
+      @include display-flex;
+      @include font(24px, 1, rgb(0, 0, 0));
+  
+      .name {
+        position: relative;
+  
+        &:after {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: rgb(0, 0, 0);
+        }
+      }
+    }
+  }
+
+  .go-home {
+    margin: 30px auto;
+    font-size: 24px;
+  }
+}
