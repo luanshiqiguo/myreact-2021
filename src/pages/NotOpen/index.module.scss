@@ -1,8 +1,8 @@
-@import '../../common/utils.scss';
+@import '~common/utils.scss';
 
 .not-open {
   position: relative;
-  background: rgba(244, 235, 104, 1);
+  // background: rgba(244, 235, 104, 1);
   padding: 75px 0 30px;
 
   .title {

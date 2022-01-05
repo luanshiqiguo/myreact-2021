@@ -112,6 +112,7 @@
     "lib-flexible": "^0.3.2",
     "node-sass": "^4.14.1",
     "prettier": "^2.4.1",
+    "sass-loader": "^10.2.0",
     "swiper": "^5.3.0"
   },
   "jest": {

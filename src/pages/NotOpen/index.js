@@ -6,7 +6,6 @@ import CountDown from '../../components/CountDown'
 import styles from './index.module.scss'
 
 function NotOpen() {
-  console.log('-----hei', MIN_HEIGHT)
   return (
     <div className={styles['not-open']} style={{ minHeight: (MIN_HEIGHT - 50) + 'px' }}>
       <LinkTo to='/myblog' classname={styles.title}>
